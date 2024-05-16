@@ -22,7 +22,7 @@ export default function Blogs() {
       blogLink:
         "https://code-maze.com/csharrp-find-latitude-and-longitude-of-a-location/",
       description:
-        "Learn how to find the latitude and longitude of a location in C#",
+        "Find the latitude and longitude of a location in C#",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-2 rounded-2xl flex flex-col cursor-pointer overflow-hidden min-w-full min-h-[180px] location-blog",
     },
@@ -38,7 +38,7 @@ export default function Blogs() {
       name: "Calculate the Difference in Months Between Two Dates in C#",
       blogLink:
         "https://code-maze.com/csharp-calculate-the-difference-in-months-between-two-dates/",
-      description: "Calculate the Difference in Months Between Two Dates in C#",
+      description: "Find the Difference in Months Between Two Dates in C#",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-1 rounded-2xl sm:flex flex-col cursor-pointer min-w-full min-h-[180px] months-blog",
       isHiddenRev: true,
@@ -68,8 +68,8 @@ export default function Blogs() {
   //   TODO: ADD FILTER OPTION for what website its on and topics? Like some tags on the top you can select
 
   return (
-    <main className="max-w-5xl m-auto md:min-h-[90vh] pb-12 mt-6">
-      <h2 className="text-5xl"></h2>
+    <main className="max-w-6xl m-auto md:min-h-[90vh] pb-12 mt-6 sm:px-8 blog-main">
+      {/* <h2 className="text-5xl"></h2> */}
 
       <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container">
         {blogs.map((blog, index) => (
@@ -80,7 +80,7 @@ export default function Blogs() {
             }`}
             onClick={() => handleDivClick(blog.blogLink)}
           >
-            <p className="m-4 font-medium desc-box h-full flex text-lg items-end">
+            <p className="m-4  desc-box h-full flex text-[20px] items-end">
               <span>{blog.description}</span>
             </p>
           </div>

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,13 +19,17 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(32, 0, 83);
-
+  background-image: url("https://i.postimg.cc/SKJNcwPh/Untitled-design-8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 6px;
 }
 
 .blog-container > * {
   transition: ease-in-out 0.3s;
+  
+  /* consider opacity */
 }
 
 .blog-container > *:hover {
@@ -71,6 +76,17 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.blog-main {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+* {
+  font-family: "Courier Prime", monospace;
 }
 
 
