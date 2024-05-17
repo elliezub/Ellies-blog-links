@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-primary/40 text-primary-content flex items-center justify-between rounded-[32px] m-2 p-1 px-2 max-w-6xl mx-auto">
+    <nav className="bg-primary/60 text-white flex items-center justify-between rounded-[32px] m-2 p-1 px-2 max-w-6xl mx-auto">
       <button className="btn btn-ghost text-xl rounded-3xl ml-1 ">
         {/* maybe add glow hover to this buttton */}
         <Link href="/">
