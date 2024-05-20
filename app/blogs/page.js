@@ -68,7 +68,7 @@ export default function Blogs() {
   //   TODO: ADD FILTER OPTION for what website its on and topics? Like some tags on the top you can select
 
   return (
-    <main className="max-w-6xl m-auto md:min-h-[90vh] pb-12 mt-6 sm:px-8 blog-main">
+    <main className="max-w-6xl m-auto min-h-screen pb-12 mt-6 sm:px-8 blog-main">
       {/* <h2 className="text-5xl"></h2> */}
 
       <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container">

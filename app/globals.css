@@ -26,7 +26,7 @@ body {
   padding: 6px;
 }
 
-.blog-container > * {
+.blog-container > *, .design-box {
   transition: ease-in-out 0.3s;
   
   /* consider opacity */
@@ -35,6 +35,11 @@ body {
 .blog-container > *:hover {
   filter: brightness(90%);
 }
+
+.design-box:hover {
+  filter: brightness(90%);
+}
+
 
 .random-color-blog {
   background: linear-gradient(rgba(82, 82, 82, 0.144), rgba(51, 51, 51, 0.164)), url("https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGNvbG9yc3xlbnwwfHwwfHx8MA%3D%3D");
@@ -83,6 +88,24 @@ body {
   font-weight: 700;
   font-style: normal;
   
+}
+
+.journeys-box {
+  background: url("https://i.postimg.cc/SQdfm3p7/Blue-and-White-Modern-Modern-Town-Hall-Meeting-Flyer-7-x-5-in-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icodethis-box {
+  background: url("https://i.postimg.cc/YS6cyMmw/Untitled-design-29.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.design-tbd-box {
+  background-color: rgb(220, 182, 255);
 }
 
 

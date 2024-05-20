@@ -2,16 +2,16 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-primary/60 text-white flex items-center justify-between rounded-[32px] m-2 p-1 px-2 max-w-6xl mx-auto">
-      <button className="btn btn-ghost text-xl rounded-3xl ml-1 ">
+    <nav className="bg-primary/60 text-white flex items-center justify-between rounded-[35px] m-2 p-2 px-3 pr-4 max-w-7xl mx-auto">
+      <button className="btn btn-ghost rounded-3xl ml-1 text-2xl">
         {/* maybe add glow hover to this buttton */}
         <Link href="/">
-        Ellie
+        <img src="\cat-icon-white.png" className="w-9 h-9"></img>
         </Link>
         </button>
 
       <div className="navbar-center hidden sm:flex">
-        <ul className="menu menu-horizontal font-semibold text-lg">
+        <ul className="menu menu-horizontal font-semibold text-xl">
           <li  className="">
             <Link href="/projects">Projects</Link>
           </li>
