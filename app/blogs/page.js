@@ -79,6 +79,11 @@ export default function Blogs() {
               blog.isHiddenRev && !showReviews ? "hidden" : "sm:flex flex"
             }`}
             onClick={() => handleDivClick(blog.blogLink)}
+            role="button"
+            aria-label={`Read blog: ${blog.name}`}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') handleDivClick(blog.blogLink);
+            }}
           >
             <p className="m-4  desc-box h-full flex text-[20px] items-end">
               <span>{blog.description}</span>
@@ -91,6 +96,8 @@ export default function Blogs() {
         <button
           className="bg-violet-200 mt-6 text-xl p-3 px-6 font-bold rounded-md hover:bg-purple-300 transition ease-in-out delay-150"
           onClick={toggleReviews}
+          aria-label={buttonText}
+          aria-expanded={showReviews}
         >
           {buttonText}
         </button>
