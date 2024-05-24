@@ -26,6 +26,10 @@ body {
   padding: 6px;
 }
 
+nav {
+  box-shadow: 3px 3px 8px rgba(71, 71, 71, 0.24);
+}
+
 .blog-container > *, .design-box {
   transition: ease-in-out 0.3s;
   
