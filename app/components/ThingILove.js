@@ -2,7 +2,7 @@ export default function ThingsILove() {
   return (
     <div className="flex justify-center flex-col mt-20 max-w-6xl mx-auto ">
       <div>
-        <h2 className="text-6xl text-center mb-6">Things I Love</h2>
+        <h2 className="xl:text-7xl sm:text-6xl text-5xl text-center mb-10 font-bold">Things I Like</h2>
       </div>
       <div className="text-indigo-600 sm:grid-cols-4 mx-auto grid grid-cols-2 gap-3">
         <div className=" rounded-xl overflow-hidden max-h-[600px] max-w-[400px]">

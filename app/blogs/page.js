@@ -68,7 +68,7 @@ export default function Blogs() {
   //   TODO: ADD FILTER OPTION for what website its on and topics? Like some tags on the top you can select
 
   return (
-    <main className="max-w-6xl m-auto min-h-screen pb-12 mt-6 sm:px-8 blog-main">
+    <main className="max-w-6xl m-auto md:min-h-screen pb-12 mt-6 sm:px-8 blog-main">
       {/* <h2 className="text-5xl"></h2> */}
 
       <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container">
@@ -94,7 +94,7 @@ export default function Blogs() {
 
       <div className="w-full justify-center flex sm:hidden">
         <button
-          className="bg-violet-200 mt-6 text-xl p-3 px-6 font-bold rounded-md hover:bg-purple-300 transition ease-in-out delay-150"
+          className="bg-violet-100 mt-6 text-xl p-3 px-6 font-bold rounded-3xl hover:bg-purple-200 transition ease-in-out duration-300 text-indigo-900"
           onClick={toggleReviews}
           aria-label={buttonText}
           aria-expanded={showReviews}
