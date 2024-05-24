@@ -18,10 +18,10 @@ export default function Collabs() {
 
   return (
     <main className="flex min-h-screen flex-col max-w-7xl mx-auto px-5 mt-12">
-      <h1 className="text-3xl font-bold max-w-5xl">
+      <h1 className="md:text-4xl text-3xl font-bold max-w-5xl">
         Podcasts & Speaking things
       </h1>
-      <div className="mt-12">
+      <div className="md:mt-8 mt-6">
         {collabItems.map((item, index) => (
           <div key={index} className="max-w-4xl mb-6">
             <h2 className="underline text-2xl text-yellow-300 mb-3">
@@ -34,6 +34,9 @@ export default function Collabs() {
           </div>
         ))}
       </div>
+      <p className="text-xl mt-4">
+        If you&apos;re interested in collaborating (live-stream, podcast etc.) Shoot me a DM on <a href="https://x.com/elliezub" target="_blank" className="underline text-yellow-300">X</a>!
+      </p>
     </main>
   );
 }

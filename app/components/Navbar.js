@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link href="/collabs">Collabs</Link>
           </li>
           <li>
-            <Link href="/blogs">Blogs</Link>
+            <Link href="/blogs">Articles</Link>
           </li>
           <li>
             <Link href="/design">Design</Link>

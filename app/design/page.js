@@ -6,10 +6,10 @@ const handleDivClick = (url) => {
 
 export default function Design() {
   return (
-    <main className="max-w-6xl m-auto min-h-screen pb-12 mt-6 sm:px-8">
-      <div className="md:grid md:grid-cols-4 gap-6 flex flex-wrap mt-12">
-        <div className="first-title-grid md:col-span-1 md:row-span-1 rounded-2xl cursor-pointer min-w-full mb-12 p-3 ">
-          <h1 className="text-5xl font-bold">My Design Stuff</h1>
+    <main className="max-w-6xl m-auto pb-12 mt-6 sm:px-8">
+      <div className="md:grid md:grid-cols-4 gap-6 flex flex-wrap md:mt-12">
+        <div className="first-title-grid md:col-span-1 md:row-span-1 rounded-2xl cursor-pointer min-w-full md:mb-12 px-2 pt-4">
+          <h1 className="md:text-5xl text-4xl font-bold md:px-0 text-center md:text-left">Design Stuff</h1>
         </div>
 
         <div
@@ -40,12 +40,12 @@ export default function Design() {
             )
           }
         >
-          <h2 className="text-center text-2xl font-bold mt-8 max-w-xl mx-auto"> TBD</h2>
+          <h2 className="text-center text-2xl font-bold mt-8 max-w-xl mx-auto"> ??</h2>
         </div>
         <div
-          className="md:col-span-3 md:row-span-1 rounded-2xl cursor-pointer min-h-[180px] min-w-full"
+          className="md:col-span-3 md:row-span-1 rounded-2xl cursor-pointer min-h-[180px] min-w-full md:block hidden"
         >
-          <h2 className="text-center text-2xl font-bold mt-8 max-w-xl mx-auto">
+          <h2 className="text-center text-2xl font-bold md:mt-8 mt-3 max-w-xl mx-auto">
             These are a few design things that I&apos;ve worked on. I&apos;m definitely not a pro, but feel free to check them out!
           </h2>
         </div>

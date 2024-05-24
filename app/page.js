@@ -12,7 +12,7 @@ export default function Home() {
           </h1>
           <div className="xl:text-xl lg:text-lg lg:pr-12">
             <p className="md:mb-2 mb-5 md:mx-0 mx-3">
-              Welcome to my portfolio? Well I just wanted to put everything
+              Welcome to my portfolio! Well I just wanted to put everything
               together somewhere, so why not here?
             </p>
 
