@@ -9,25 +9,23 @@ export const metadata = {
   title: "Ellie",
   description: "Ellie's portfolio site",
   openGraph: {
-    type: 'website',
-    url: 'https://elliez.netlify.app/',
-    title: 'Ellie',
-    description: 'Ellie\'s portfolio site',
+    type: "website",
+    url: "https://elliez.netlify.app/",
+    title: "Ellie",
+    description: "Ellie's portfolio site",
     images: [
       {
-        url: 'https://i.postimg.cc/GtsP0212/Screenshot-2024-05-24-173509.png',
-        width: 800,
-        height: 600,
-        alt: 'Default Image',
+        url: "https://i.postimg.cc/pXJCPmFh/Untitled-design-9.jpg",
+        alt: "My portfolio site",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    site: '@elliezub',
-    title: 'Ellie',
-    description: 'My portfolio site',
-    image: 'https://i.postimg.cc/GtsP0212/Screenshot-2024-05-24-173509.png',
+    card: "summary_large_image",
+    site: "@elliezub",
+    title: "Ellie",
+    description: "My portfolio site",
+    image: "https://i.postimg.cc/pXJCPmFh/Untitled-design-9.jpg",
   },
 };
 
@@ -42,4 +40,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
