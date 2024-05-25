@@ -17,7 +17,7 @@ export default function Collabs() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col max-w-7xl mx-auto px-5 mt-12">
+    <main className="flex blogPage flex-col max-w-7xl mx-auto px-5 mt-12">
       <h1 className="md:text-4xl text-3xl font-bold max-w-5xl">
         Podcasts & Speaking things
       </h1>

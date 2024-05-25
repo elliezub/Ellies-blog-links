@@ -110,4 +110,6 @@ nav {
 }
 
 
-
+.blogPage {
+  min-height: 70vh;
+}
