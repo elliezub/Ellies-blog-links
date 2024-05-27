@@ -1,6 +1,6 @@
 export default function ThingsILove() {
   return (
-    <div className="flex justify-center flex-col mt-20 max-w-6xl mx-auto ">
+    <div className="flex justify-center flex-col mt-20 max-w-7xl mx-auto p-4">
       <div>
         <h2 className="sm:text-[55px] text-5xl text-center mb-10 font-bold">
           Things I Like

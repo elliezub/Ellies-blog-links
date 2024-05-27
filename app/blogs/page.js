@@ -68,7 +68,7 @@ export default function Blogs() {
   //   TODO: ADD FILTER OPTION for what website its on and topics? Like some tags on the top you can select
 
   return (
-    <main className="max-w-6xl m-auto  pb-12 mt-6 sm:px-8 blog-main text-white">
+    <main className="max-w-7xl m-auto  pb-12 mt-6 sm:px-8 blog-main text-white">
       <h1 className="md:text-5xl text-4xl font-bold md:px-0 text-center md:text-left block sm:hidden mb-6 mt-10">Articles</h1>
       <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container">
         {blogs.map((blog, index) => (

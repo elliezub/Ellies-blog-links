@@ -9,12 +9,12 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-image: url("https://i.postimg.cc/SKJNcwPh/Untitled-design-8.jpg");
+  background: linear-gradient(179.4deg, rgb(21, 0, 48) -16.9%, rgb(112, 0, 204) 119.9%);
+  
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 6px;
   min-height: 100vh;
 }
 

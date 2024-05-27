@@ -5,10 +5,11 @@ import ThingsILove from "./components/ThingILove";
 export default function Home() {
   return (
     <div className="md:min-h-screen">
-      <main className="flex p-4 mx-auto max-w-6xl md:justify-between md:flex-nowrap flex-wrap mt-6 md:mt-24 sm:mt-12">
-        <div className="md:max-w-xl mx-auto lg:mr-12 sm:mr-4 ">
-          <h1 className="xl:text-7xl sm:text-6xl text-5xl font-bold mb-4 md:mx-0 mx-3">
-            Hi, I&apos;m Ellie.
+      <div className="w-full border-b-[1.4px] border-indigo-900">
+      <main className="max-w-7xl mx-auto flex p-4 md:justify-between md:flex-nowrap flex-wrap mt-6 md:mt-24 sm:mt-12 pb-28">
+        <div className="lg:mr-12 sm:mr-4">
+          <h1 className="xl:text-6xl  text-5xl font-bold mb-4 md:mx-0 mx-3">
+            Hi, I&apos;m Ellie
           </h1>
           <div className="xl:text-xl lg:text-lg lg:pr-12">
             <p className="md:mb-2 mb-5 md:mx-0 mx-3">
@@ -39,6 +40,11 @@ export default function Home() {
         </div>
 
       </main>
+
+      </div>
+
+
+
       <ThingsILove/>
     </div>
   );
