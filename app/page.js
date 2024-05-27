@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-[470px] hidden md:block">
+        <div className="max-w-[420px] hidden md:block">
           <img src="/elliepfp.jpg" alt="profile" className=" rounded-3xl" />
         </div>
 
