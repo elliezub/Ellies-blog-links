@@ -24,12 +24,12 @@ export default function Collabs() {
       <div className="md:mt-8 mt-6">
         {collabItems.map((item, index) => (
           <div key={index} className="max-w-4xl mb-6">
-            <h2 className="underline text-2xl text-yellow-300 mb-3">
+            <h2 className="underline text-2xl text-teal-200 mb-3">
               <Link href={item.linkToCollab} target="_blank">
                 {item.name}
               </Link>
             </h2>
-            <span className="bg-white text-purple-600 px-3 py-1 rounded-2xl mt-4">{item.type}</span>
+            <span className="bg-white text-indigo-900 px-3 py-1 rounded-2xl mt-4">{item.type}</span>
             {item.description && <p className="mt-3">{item.description}</p>}
           </div>
         ))}

@@ -1,12 +1,12 @@
 export default function ThingsILove() {
   return (
-    <div className="flex justify-center flex-col mt-20 max-w-7xl mx-auto p-4">
+    <div className="flex justify-center flex-col mt-16 max-w-7xl mx-auto p-4">
       <div>
         <h2 className="sm:text-[55px] text-5xl text-center mb-10 font-bold">
           Things I Like
         </h2>
       </div>
-      <div className="text-indigo-600 sm:grid-cols-4 mx-auto grid grid-cols-2 gap-3">
+      <div className="sm:grid-cols-4 mx-auto grid grid-cols-2 gap-3">
         <div className="relative rounded-xl overflow-hidden max-h-[600px] max-w-[400px] group">
           <img
             src="https://images.unsplash.com/photo-1518843025960-d60217f226f5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
