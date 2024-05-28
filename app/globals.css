@@ -23,6 +23,15 @@ nav {
   box-shadow: 3px 3px 8px rgba(71, 71, 71, 0.24);
 }
 
+.outline-img {
+  transition: box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.outline-img:hover {
+  box-shadow: 0 0 0 3px rgba(201, 143, 255, 0.5);
+}
+
 .blog-container > *, .design-box {
   transition: ease-in-out 0.3s;
   

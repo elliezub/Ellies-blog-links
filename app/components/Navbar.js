@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="bg-[#722aff]/80 text-white flex items-center justify-between rounded-[35px] m-2 p-2 px-3 pr-4 max-w-7xl mx-auto">
-      <button className="btn btn-ghost rounded-3xl ml-1 text-2xl hidden sm:flex">
+      <button className="hidden sm:flex ml-2">
         {/* maybe add glow hover to this buttton */}
         <Link href="/">
-          <img src="\cat-icon-white.png" className="w-9 h-9"></img>
+          <img src="\cartoonpfp.png" className="w-12 h-12 outline-img"></img>
         </Link>
       </button>
 
