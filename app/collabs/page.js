@@ -3,16 +3,25 @@ import Link from "next/link";
 export default function Collabs() {
   const collabItems = [
     {
+      name: "Live Coffee Chat",
+      type: "Twitter Space",
+      linkToCollab: "https://spacesdashboard.com/u/elliezub",
+      description: "Once a week I host a space where people can connect with others in the tech community. We don't necessarily have a specific topic, but the goal is to make new friends, have fun, & *hopefully* learn new things.",
+      sideImg: "",
+    },
+    {
       name: "Azure Triumphs w/ Nikos Delis",
       type: "Podcast",
       linkToCollab: "https://open.spotify.com/episode/7fqEw8TIHiPte9AFy2JZNr?si=ticU6_kEQ8Gu9i1B94B4XQ&nd=1&dlsi=98ceb7b44c1a413a",
       description: "Nikos invited me to be on his podcast (It was my first time being on a podcast!) & we ended up talking about our journeys into tech, motivation, learning, and so much more.",
+      sideImg: "",
     },
     {
       name: "Clerk Roundtable @ Journeys Conference",
       type: "Roundtable",
       linkToCollab: "https://www.youtube.com/watch?v=hvyn-n8Kqgg&t=86s",
       description: "I got the chance to talk with a bunch of really cool people about the benefits of building in public.",
+      sideImg: "",
     },
   ];
 
@@ -34,8 +43,8 @@ export default function Collabs() {
           </div>
         ))}
       </div>
-      <p className="text-xl mt-4">
-        If you&apos;re interested in collaborating (live-stream, podcast etc.) Shoot me a DM on <a href="https://x.com/elliezub" target="_blank" className="underline text-yellow-300">X</a>!
+      <p className="text-xl mt-4 bg-slate-950 py-6 px-12 rounded-md text-center shadow-md mx-auto">
+        If you&apos;re interested in collaborating (Twitter space, live-stream, podcast etc.) Shoot me a DM on <a href="https://x.com/elliezub" target="_blank" className="underline text-teal-200">X/Twitter</a>!
       </p>
     </main>
   );

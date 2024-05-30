@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="navbar-center hidden sm:flex">
         <ul className="menu menu-horizontal font-semibold text-xl">
           <li className="">
-            <Link href="/collabs">Collabs</Link>
+            <Link href="/collabs">Community</Link>
           </li>
           <li>
             <Link href="/blogs">Articles</Link>

@@ -29,10 +29,6 @@ To get a local copy up and running, follow these steps:
 
 ## Contributing
 If you would like to contribute to this project, please fork the repository and create a new branch for your feature or bug fix. Once your changes are ready, submit a pull request for review.
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
-
 ## Contact
 For any questions or inquiries, please contact Ellie at [elliezub@gmail.com].
 
