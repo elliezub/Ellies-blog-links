@@ -24,7 +24,17 @@ export default function Collabs() {
       types: ["Roundtable", "Conference"],
       linkToCollab: "https://www.youtube.com/watch?v=hvyn-n8Kqgg&t=86s",
       description:
-        "I got the chance to talk with a bunch of really cool people about the benefits of building in public.",
+      (
+        <>
+          I had the opportunity to discuss the benefits of building in public
+          with a group of insightful people. This roundtable chat occurred
+          during Journeys Conference, a fundraising event hosted by the {" "}
+          <Link href="https://thetc.co/" target="_blank" className="underline text-teal-200">
+            Tech Commute
+          </Link>
+          .
+        </>
+      ),
       sideImg: "/journeysimg.png",
     },
   ];
@@ -75,13 +85,13 @@ export default function Collabs() {
       <p className="text-xl mt-4 bg-slate-950 py-6 px-12 rounded-md text-center shadow-md w-full">
         If you&apos;re interested in collaborating (Twitter space, live-stream,
         podcast etc.) Shoot me a DM on{" "}
-        <a
+        <Link
           href="https://x.com/elliezub"
           target="_blank"
           className="underline text-teal-200"
         >
           X/Twitter
-        </a>
+        </Link>
         !
       </p>
     </main>

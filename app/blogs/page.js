@@ -50,6 +50,9 @@ export default function Blogs() {
         "sm:col-span-2 sm:row-span-1 rounded-2xl sm:flex flex-col cursor-pointer min-w-full sm:min-h-[270px] min-h-[180px] days-blog",
       isHiddenRev: true,
     },
+   
+    
+    
   ];
 
   const [showReviews, setShowReviews] = useState(false);
