@@ -4,9 +4,9 @@ import { useState } from "react";
 export default function Blogs() {
   const blogs = [
     {
-      name: "How to Generate a Random Color Name in C#",
+      name: "Generate a Random Color Name in C#",
       blogLink: "https://code-maze.com/csharp-generate-a-random-color-name/",
-      description: "Learn how to generate a random color name in C#",
+      description: "Generate a Random Color Name in C#",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-1 rounded-2xl flex flex-col random-color-blog cursor-pointer min-w-full min-h-[180px]",
     },
@@ -18,26 +18,26 @@ export default function Blogs() {
         "sm:col-span-1 sm:row-span-1 rounded-2xl flex flex-col cursor-pointer scratch-blog min-w-full min-h-[180px]",
     },
     {
-      name: "How to Find the Latitude and Longitude of a Location in C#",
+      name: "Find the Latitude and Longitude of a Location in C#",
       blogLink:
         "https://code-maze.com/csharrp-find-latitude-and-longitude-of-a-location/",
-      description: "Find the latitude and longitude of a location in C#",
+      description: "Find the Latitude and Longitude of a Location in C#",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-2 rounded-2xl flex flex-col cursor-pointer overflow-hidden min-w-full min-h-[180px] location-blog",
     },
     {
       name: "Magical C# Classes",
       blogLink: "https://dev.to/elliezub/magical-c-classes-3heg",
-      description: "Learn about C# classes, but with wizard examples!",
+      description: "Magical C# Classes",
       uniqueClassNames:
         "sm:col-span-2 sm:row-span-1 rounded-2xl sm:flex flex-col cursor-pointer min-w-full sm:min-h-[250px] min-h-[180px] wizard-classes-blog",
       isHiddenRev: true,
     },
     {
-      name: "Calculate the Difference in Months Between Two Dates in C#",
+      name: "Difference in Months Between Two Dates",
       blogLink:
         "https://code-maze.com/csharp-calculate-the-difference-in-months-between-two-dates/",
-      description: "Find the Difference in Months Between Two Dates in C#",
+      description: "Difference in Months Between Two Dates",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-1 rounded-2xl sm:flex flex-col cursor-pointer min-w-full min-h-[180px] months-blog",
       isHiddenRev: true,
