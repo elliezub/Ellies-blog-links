@@ -21,8 +21,7 @@ export default function Blogs() {
       name: "How to Find the Latitude and Longitude of a Location in C#",
       blogLink:
         "https://code-maze.com/csharrp-find-latitude-and-longitude-of-a-location/",
-      description:
-        "Find the latitude and longitude of a location in C#",
+      description: "Find the latitude and longitude of a location in C#",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-2 rounded-2xl flex flex-col cursor-pointer overflow-hidden min-w-full min-h-[180px] location-blog",
     },
@@ -68,9 +67,11 @@ export default function Blogs() {
   //   TODO: ADD FILTER OPTION for what website its on and topics? Like some tags on the top you can select
 
   return (
-    <main className="max-w-7xl m-auto  pb-12 mt-6 sm:px-8 blog-main text-white">
-      <h1 className="md:text-5xl text-4xl font-bold md:px-0 text-center md:text-left block sm:hidden mb-6 mt-10">Articles</h1>
-      <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container">
+    <main className="max-w-7xl mx-auto px-5 mt-12 blog-main text-white">
+      <h1 className="md:text-4xl text-3xl font-bold max-w-5xl">
+        Articles & Blog posts
+      </h1>
+      <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container mt-8">
         {blogs.map((blog, index) => (
           <div
             key={index}
@@ -81,7 +82,7 @@ export default function Blogs() {
             role="button"
             aria-label={`Read blog: ${blog.name}`}
             onKeyDown={(e) => {
-              if (e.key === 'Enter') handleDivClick(blog.blogLink);
+              if (e.key === "Enter") handleDivClick(blog.blogLink);
             }}
           >
             <p className="m-4  desc-box h-full flex text-[20px] items-end">
