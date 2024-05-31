@@ -20,16 +20,19 @@ export default function Collabs() {
       sideImg: "/azurelogo.png",
     },
     {
-      name: "Clerk Roundtable @ Journeys Conference",
-      types: ["Roundtable", "Conference"],
+      name: "Journeys Conference",
+      types: ["Clerk Roundtable", "Conference"],
       linkToCollab: "https://www.youtube.com/watch?v=hvyn-n8Kqgg&t=86s",
-      description:
-      (
+      description: (
         <>
           I had the opportunity to discuss the benefits of building in public
           with a group of insightful people. This roundtable chat occurred
-          during Journeys Conference, a fundraising event hosted by the {" "}
-          <Link href="https://thetc.co/" target="_blank" className="underline text-teal-200">
+          during Journeys Conference, a fundraising event hosted by the{" "}
+          <Link
+            href="https://thetc.co/"
+            target="_blank"
+            className="underline text-teal-200"
+          >
             Tech Commute
           </Link>
           .
@@ -48,8 +51,6 @@ export default function Collabs() {
         {collabItems.map((item, index) => (
           <div key={index} className="max-w-5xl mb-6 flex">
             <div className="w-[170px] h-[170px] flex-shrink-0 mr-4 hidden sm:block">
-              {" "}
-              {/* Fixed width and height */}
               <Image
                 src={item.sideImg}
                 alt={item.name}
@@ -59,24 +60,40 @@ export default function Collabs() {
                 className="rounded-2xl"
               />
             </div>
+
             <div>
-              <h2 className="underline text-[1.7rem] text-teal-200 mb-2">
-                <Link href={item.linkToCollab} target="_blank">
-                  {item.name}
-                </Link>
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {item.types.map((type, typeIndex) => (
-                  <span
-                    key={typeIndex}
-                    className="bg-white text-indigo-900 px-3 py-1 rounded-2xl text-sm font-semibold"
-                  >
-                    {type}
-                  </span>
-                ))}
+              <div className="flex">
+                <div className="w-[85px] h-[85px] flex-shrink-0 mr-2 block sm:hidden">
+                  <Image
+                    src={item.sideImg}
+                    alt={item.name}
+                    width={85}
+                    height={85}
+                    objectFit="cover"
+                    className="rounded-2xl"
+                  />
+                </div>
+                <div>
+                  <h2 className="underline md:text-[1.7rem] text-2xl text-teal-200 mb-2">
+                    <Link href={item.linkToCollab} target="_blank">
+                      {item.name}
+                    </Link>
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {item.types.map((type, typeIndex) => (
+                      <span
+                        key={typeIndex}
+                        className="bg-white text-indigo-900 px-3 py-1 rounded-2xl md:text-sm sm:text-xs text-[9px] font-semibold"
+                      >
+                        {type}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
+
               {item.description && (
-                <p className="mt-3 text-[17px]">{item.description}</p>
+                <p className="mt-3 md:text-[17px] text-[15px]">{item.description}</p>
               )}
             </div>
           </div>
