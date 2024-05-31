@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
+    <div className="mx-2">
     <nav className="bg-[#722aff]/80 text-white flex items-center justify-between rounded-[35px] m-2 p-2 px-3 pr-4 max-w-7xl mx-auto">
       <button className="hidden sm:flex ml-2">
         {/* maybe add glow hover to this buttton */}
@@ -80,5 +81,6 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
+    </div>
   );
 }
