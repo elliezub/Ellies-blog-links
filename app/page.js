@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="max-w-[380px] hidden md:block card"
+            className="max-w-[395px] hidden md:block card"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
