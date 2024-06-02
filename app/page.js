@@ -29,14 +29,15 @@ export default function Home() {
 
   return (
     <div className="md:min-h-screen">
-      <div className="w-full border-b-[1.4px] border-indigo-900">
-        <main className="max-w-5xl mx-auto flex p-4 md:justify-between md:flex-nowrap flex-wrap mt-6 md:mt-24 sm:mt-12 pb-20">
+      <div className="w-full">
+        {/* this was where the bottom border was */}
+        <main className="max-w-7xl px-10 mx-auto flex  md:justify-between md:flex-nowrap flex-wrap mt-6 md:mt-24 sm:mt-12 pb-24">
           <div className="lg:mr-12 sm:mr-4">
             <h1 className="md:text-8xl text-5xl font-bold mb-4 ">
               Hi, I&apos;m Ellie
             </h1>
             <div className="xl:text-2xl lg:text-lg lg:pr-12">
-              <div className="md:max-w-lg">
+              <div className="md:max-w-xl">
                 <p className="md:mb-0 mb-5 ">
                   Welcome to my portfolio site! Well, I just wanted to put
                   everything together somewhere, so why not here? I plan to
@@ -54,7 +55,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="max-w-[350px] hidden md:block card"
+            className="max-w-[380px] hidden md:block card"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >

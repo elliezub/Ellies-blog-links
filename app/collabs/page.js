@@ -7,7 +7,7 @@ export default function Collabs() {
       types: ["Twitter Space", "Live Stream"],
       linkToCollab: "https://spacesdashboard.com/u/elliezub",
       description:
-        "Once a week I host a space where people can connect with others in the tech community. We don't necessarily have a specific topic, but the goal is to make new friends, have fun, & *hopefully* learn new things.",
+        "Once a week I host a group coffee chat space where people can connect with others in the tech community. We don't necessarily have a specific topic, but the goal is to make new friends, have fun, & *hopefully* learn new things.",
       sideImg: "/livecoffeechat.png",
     },
     {
@@ -50,7 +50,7 @@ export default function Collabs() {
       <div className="md:mt-8 mt-6 ">
         {collabItems.map((item, index) => (
           <div key={index} className="max-w-5xl mb-6 flex">
-            <div className="w-[170px] h-[170px] flex-shrink-0 mr-4 hidden sm:block">
+            <div className="w-[170px] h-[170px] flex-shrink-0 mr-4 hidden sm:block shadow-md">
               <Image
                 src={item.sideImg}
                 alt={item.name}
@@ -93,24 +93,34 @@ export default function Collabs() {
               </div>
 
               {item.description && (
-                <p className="mt-3 md:text-[17px] text-[15px]">{item.description}</p>
+                <p className="mt-3 md:text-[17px] text-[15px]">
+                  {item.description}
+                </p>
               )}
             </div>
           </div>
         ))}
       </div>
-      <p className="text-xl mt-4 bg-slate-950 py-6 px-12 rounded-md text-center shadow-md w-full">
-        If you&apos;re interested in collaborating (Twitter space, live-stream,
-        podcast etc.) Shoot me a DM on{" "}
+      <div className="mt-4 bg-gradient-to-tr from-slate-950 to-violet-950 md:px-10 lg:py-8 lg:px-20 px-6 py-8 rounded-2xl shadow-md flex sm:justify-between sm:items-center sm:flex-row flex-col items-start">
+        <div className="">
+          <h1 className="text-2xl font-bold">Let&apos;s collaborate</h1>
+          <p className="font-light mt-1 max-w-2xl sm:max-w-4xl">
+            If you&apos;re interested in collaborating (Twitter space,
+            live-stream, podcast etc.) Shoot me a DM on{" "}
+            <Link href="https://x.com/elliezub" target="_blank" className="">
+              X/Twitter
+            </Link>
+            !
+          </p>
+        </div>
         <Link
           href="https://x.com/elliezub"
           target="_blank"
-          className="underline text-teal-200"
+          className="bg-violet-300 p-2 px-4 rounded-xl shadow-md text-slate-950 font-semibold whitespace-nowrap sm:ml-6 sm:mt-0 mt-4"
         >
-          X/Twitter
+          Contact Me
         </Link>
-        !
-      </p>
+      </div>
     </main>
   );
 }
