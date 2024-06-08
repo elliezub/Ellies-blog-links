@@ -43,9 +43,7 @@ export default function Design() {
     },
   ];
 
-  const handleDivClick = (url) => {
-    window.open(url, "_blank");
-  };
+ 
 
   return (
     <main className="max-w-7xl mx-auto px-5 mt-12 text-white">
@@ -57,14 +55,8 @@ export default function Design() {
         {projects.map((project, index) => (
           <div key={index} className="rounded-2xl overflow-hidden">
             <div
-              className={`parent-div sm:col-span-1 sm:row-span-1 flex flex-col justify-end cursor-pointer min-w-full min-h-[380px]
-                bg-cover bg-center shadow-md`}
-              onClick={() => handleDivClick(project.projectLink)}
-              role="button"
-              aria-label={`See project: ${project.name}`}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") handleDivClick(project.projectLink);
-              }}
+              className={`parent-div sm:col-span-1 sm:row-span-1 flex flex-col justify-end min-w-full min-h-[380px]
+                bg-cover bg-center shadow-md`} 
               style={{
                 backgroundImage: `url(${project.projectImg})`,
               }}

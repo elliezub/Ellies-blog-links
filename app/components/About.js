@@ -1,25 +1,52 @@
 export default function ThingsILove() {
+  const skills = [
+    "React",
+    "JavaScript",
+    "Next.js",
+    "C#",
+    "Meow",
+    "Meow",
+    "Meow",
+    "Meow",
+  ];
   return (
-    <div className="bg-[#722aff]/30 max-w-7xl mx-auto p-10 rounded-xl">
-      <div className="flex justify-between">
+    <div className="about max-w-7xl md:mx-auto lg:p-10 md:px-6 px-4 md:py-8 py-5 rounded-xl">
+      <div className="flex justify-between flex-col lg:flex-row">
         <div>
-          <h2 className="text-6xl mb-10 font-bold">About</h2>
+          <h2 className="text-6xl md:mb-10 mb-6 font-bold">About</h2>
         </div>
 
-        <div className="max-w-xl text-2xl">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-            <br></br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-          </p>
-        </div>
+        <section className="lg:max-w-2xl lg:text-2xl text-xl flex flex-col about-section font-medium">
+          <h1>What I&apos;m doing</h1>
+          <ul className="list-disc ml-6 mb-6">
+            <li>Technical Writer @ Code Maze</li>
+            <li>Content Partner @ Pieces</li>
+            <li>Volunteer Web Content Editor @ MuggleNet</li>
+          </ul>
+          <h1>Something</h1>
+          <ul className="list-disc ml-6 mb-6">
+            <li>
+              I plan to change this text later! Not sure what I will write here.
+            </li>
+            <li>
+              I plan to change this text later! Not sure what I will write
+              here.I plan to change this text later! Not sure what I will write
+              here.
+            </li>
+            <li>hi</li>
+          </ul>
+          <h1>Skills</h1>
+          <ul className="flex gap-x-5 gap-y-1 flex-wrap">
+            {skills.map((skill, index) => (
+              <li
+                key={index}
+                className="bg-[#f0f8ff] text-indigo-950 px-4 rounded-2xl text-[18px] mt-3 font-semibold shadow-md"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </div>
   );

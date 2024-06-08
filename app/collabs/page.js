@@ -47,15 +47,15 @@ export default function Collabs() {
       <h1 className="md:text-4xl text-3xl font-bold max-w-5xl">
         Podcasts, Speaking, & Community things
       </h1>
-      <div className="md:mt-8 mt-6 ">
+      <div className="md:mt-8 mt-6 font-medium">
         {collabItems.map((item, index) => (
-          <div key={index} className="max-w-5xl mb-6 flex">
-            <div className="w-[170px] h-[170px] flex-shrink-0 mr-4 hidden sm:block shadow-md">
+          <div key={index} className="mb-6 flex ">
+            <div className="w-[185px] h-[185px] flex-shrink-0 mr-4 hidden md:block shadow-md">
               <Image
                 src={item.sideImg}
                 alt={item.name}
-                width={170}
-                height={170}
+                width={185}
+                height={185}
                 objectFit="cover"
                 className="rounded-2xl"
               />
@@ -63,18 +63,8 @@ export default function Collabs() {
 
             <div>
               <div className="flex">
-                <div className="w-[85px] h-[85px] flex-shrink-0 mr-2 block sm:hidden">
-                  <Image
-                    src={item.sideImg}
-                    alt={item.name}
-                    width={85}
-                    height={85}
-                    objectFit="cover"
-                    className="rounded-2xl"
-                  />
-                </div>
                 <div>
-                  <h2 className="underline md:text-[1.7rem] text-2xl text-teal-200 mb-2">
+                  <h2 className="underline md:text-[1.7rem] text-3xl text-teal-200 mb-2">
                     <Link href={item.linkToCollab} target="_blank">
                       {item.name}
                     </Link>
@@ -83,7 +73,7 @@ export default function Collabs() {
                     {item.types.map((type, typeIndex) => (
                       <span
                         key={typeIndex}
-                        className="bg-white text-indigo-900 px-3 py-1 rounded-2xl md:text-sm sm:text-xs text-[9px] font-semibold"
+                        className="bg-white text-indigo-900 px-3 py-1 rounded-2xl text-sm font-semibold"
                       >
                         {type}
                       </span>
@@ -93,7 +83,7 @@ export default function Collabs() {
               </div>
 
               {item.description && (
-                <p className="mt-3 md:text-[17px] text-[15px]">
+                <p className="mt-3 lg:text-2xl text-xl text-pretty">
                   {item.description}
                 </p>
               )}
@@ -101,10 +91,10 @@ export default function Collabs() {
           </div>
         ))}
       </div>
-      <div className="mt-4 bg-gradient-to-tr from-slate-950 to-violet-950 md:px-10 lg:py-8 lg:px-20 px-6 py-8 rounded-2xl shadow-md flex sm:justify-between sm:items-center sm:flex-row flex-col items-start">
+      <div className="mt-4 bg-gradient-to-tr from-indigo-500 to-violet-600 md:px-10 lg:py-8 lg:px-20 px-6 py-8 rounded-2xl shadow-md flex sm:justify-between sm:items-center sm:flex-row flex-col items-start">
         <div className="">
-          <h1 className="text-2xl font-bold">Let&apos;s collaborate</h1>
-          <p className="font-light mt-1 max-w-2xl sm:max-w-4xl">
+          <h1 className="text-3xl font-bold">Let&apos;s collaborate</h1>
+          <p className=" mt-2 max-w-2xl sm:max-w-4xl text-[18px]">
             If you&apos;re interested in collaborating (Twitter space,
             live-stream, podcast etc.) Shoot me a DM on{" "}
             <Link href="https://x.com/elliezub" target="_blank" className="">
@@ -116,7 +106,7 @@ export default function Collabs() {
         <Link
           href="https://x.com/elliezub"
           target="_blank"
-          className="bg-violet-300 p-2 px-4 rounded-xl shadow-md text-slate-950 font-semibold whitespace-nowrap sm:ml-6 sm:mt-0 mt-4"
+          className="bg-violet-200 text-indigo-950 p-2 px-4 rounded-xl shadow-md font-bold whitespace-nowrap sm:ml-6 sm:mt-0 mt-6 text-lg"
         >
           Contact Me
         </Link>

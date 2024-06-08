@@ -7,22 +7,33 @@
 
 
 * {
-  color:white;
+  color:#f0f8ff;
   font-family: "Outfit", sans-serif;
 }
 
 
 body {
-  background: linear-gradient(180deg, rgb(7, 0, 20) , #722aff );
+  /* background: linear-gradient(180deg, rgb(7, 0, 20) , #722aff ); */
+  background: linear-gradient(180deg, #9383ff, #ae5efa );
+  /* background-image: linear-gradient(to bottom, #0c0018, #241155, #311276, #401099, #4d19ad, #5a23c2, #682cd7, #7440e1, #8053ea, #8c64f4, #9875fd); */
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
 
-nav {
-  box-shadow: 3px 3px 8px rgba(71, 71, 71, 0.24);
+nav, .about {
+  box-shadow: 3px 3px 12px rgba(54, 54, 54, 0.24);
+  background-color: #6600ffbb;
 }
+
+.about-section > h1 {
+  font-size: 1.65rem;
+  color: #b2f5ea;
+  font-weight: 550;
+}
+
 
 .hover-title-div {
   transform: translateY(100%);

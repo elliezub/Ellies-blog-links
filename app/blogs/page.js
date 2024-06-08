@@ -13,7 +13,7 @@ export default function Blogs() {
     {
       name: "Intro to Coding with Scratch",
       blogLink: "https://dev.to/elliezub/intro-to-coding-with-scratch-2e86",
-      description: "",
+      description: "Intro to Coding with Scratch",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-1 rounded-2xl flex flex-col cursor-pointer scratch-blog min-w-full min-h-[180px]",
     },
@@ -45,7 +45,7 @@ export default function Blogs() {
     {
       name: "Should you do #100DaysOfCode?",
       blogLink: "https://dev.to/elliezub/should-you-do-100daysofcode-3p0h",
-      description: "",
+      description: "Should you do #100DaysOfCode?",
       uniqueClassNames:
         "sm:col-span-2 sm:row-span-1 rounded-2xl sm:flex flex-col cursor-pointer min-w-full sm:min-h-[270px] min-h-[180px] days-blog",
       isHiddenRev: true,
@@ -91,6 +91,7 @@ export default function Blogs() {
             <p className="m-4  desc-box h-full flex text-[20px] items-end">
               <span>{blog.description}</span>
             </p>
+            {/* add white under it */}
           </div>
         ))}
       </div>
