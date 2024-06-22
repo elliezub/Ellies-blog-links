@@ -19,8 +19,8 @@ export default function ThingsILove() {
         <section className="lg:max-w-2xl lg:text-2xl text-xl flex flex-col about-section font-medium">
           <h1>What I&apos;m doing</h1>
           <ul className="list-disc ml-6 mb-6">
+            <li>Developer Advocate @ Pieces</li>
             <li>Technical Writer @ Code Maze</li>
-            <li>Content Partner @ Pieces</li>
             <li>Volunteer Web Content Editor @ MuggleNet</li>
           </ul>
           <h1>Something</h1>

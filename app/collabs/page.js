@@ -50,7 +50,7 @@ export default function Collabs() {
       <div className="md:mt-8 mt-6 font-medium">
         {collabItems.map((item, index) => (
           <div key={index} className="mb-6 flex ">
-            <div className="w-[185px] h-[185px] flex-shrink-0 mr-4 hidden md:block shadow-md">
+            <div className="w-[185px] h-[185px] flex-shrink-0 mr-4 hidden md:block shadow-md rounded-2xl">
               <Image
                 src={item.sideImg}
                 alt={item.name}

@@ -40,8 +40,8 @@ export default function Home() {
             <div className="lg:text-2xl text-xl">
               <div className="md:max-w-xl">
                 <p className="md:mb-0 mb-5 text-pretty font-medium">
-                  I&apos;m a software developer & technical writer who loves
-                  cats. This is my portfolio site, here you can find links to
+                  I&apos;m a developer advocate & technical writer who loves
+                  cats. Here, you can find links to
                   all my articles, projects, & collabs.
                 </p>
                 <p className="mt-6 text-pretty max-w-lg font-medium">
