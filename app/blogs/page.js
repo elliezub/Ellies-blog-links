@@ -66,6 +66,7 @@ export default function Blogs() {
     window.open(url, "_blank");
   };
 
+
   const handleFormatChange = (e) => {
     setDenseFormat(e.target.checked);
   };
@@ -115,7 +116,7 @@ export default function Blogs() {
         <div className="dense-format mt-8">
           {blogs.map((blog, index) => (
             <div key={index} className="dense-blog-item mb-4">
-              <h1 className="text-xl font-bold underline">
+              <h1 className="md:text-[1.7rem] text-3xl font-bold underline text-teal-200 mb-1">
                 <a
                   href={blog.blogLink}
                   target="_blank"
@@ -124,7 +125,8 @@ export default function Blogs() {
                   {blog.name}
                 </a>
               </h1>
-              <p>{blog.description}</p>
+
+              <p className="font-medium lg:text-2xl text-xl text-pretty">{blog.description}</p>
             </div>
           ))}
         </div>

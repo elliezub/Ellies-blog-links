@@ -34,3 +34,8 @@ For any questions or inquiries, please contact Ellie at [elliezub@gmail.com].
 
 
 
+
+notes
+
+add view transition
+change the desc for articles

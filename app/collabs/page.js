@@ -12,6 +12,25 @@ export default function Collabs() {
       sideImg: "/livecoffeechat.png",
     },
     {
+      name: "DevMar Dots w/ Sophia Iroegbu",
+      types: ["Podcast", "Live Stream"],
+      linkToCollab: "https://www.youtube.com/watch?v=uWNR3z3Hk9k&t=4196s",
+      description: (
+        <>
+          <Link
+            href="https://x.com/sophiairoegbu_"
+            target="_blank"
+            className="underline text-teal-200"
+          >
+            Sophia
+          </Link>{" "}
+          invited me on the DevMar Dot&apos;s podcast to talk about &quot;The
+          Do&apos;s & Don&apos;ts of Technical Writing&quot;. 
+        </>
+      ),
+      sideImg: "/beacamppurple.jpg",
+    },
+    {
       name: "Azure Triumphs w/ Nikos Delis",
       types: ["Podcast"],
       linkToCollab:
@@ -92,7 +111,7 @@ export default function Collabs() {
           </div>
         ))}
       </div>
-      
+
       <LetsCollab />
     </main>
   );
