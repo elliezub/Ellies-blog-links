@@ -44,6 +44,7 @@ export default function Design() {
   ];
 
  
+ // TODO: Add a option to instead of pictures we can have a list similar to the community tab ?? 
 
   return (
     <main className="max-w-7xl mx-auto px-5 mt-12 text-white">
@@ -53,7 +54,7 @@ export default function Design() {
 
       <div className="gap-4 flex flex-col mt-8 w-full md:grid md:grid-cols-3">
         {projects.map((project, index) => (
-          <div key={index} className="rounded-2xl overflow-hidden">
+          <div key={index} className="rounded-2xl overflow-hidden shadow-md">
             <div
               className={`parent-div sm:col-span-1 sm:row-span-1 flex flex-col justify-end min-w-full min-h-[380px]
                 bg-cover bg-center shadow-md`} 

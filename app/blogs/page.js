@@ -6,7 +6,8 @@ export default function Blogs() {
     {
       name: "Generate a Random Color Name in C#",
       blogLink: "https://code-maze.com/csharp-generate-a-random-color-name/",
-      description: "Generate a Random Color Name in C#",
+      description:
+        "This article shows you how to Generate a Random Color Name in C#",
       uniqueClassNames:
         "sm:col-span-1 sm:row-span-1 rounded-2xl flex flex-col random-color-blog cursor-pointer min-w-full min-h-[180px]",
     },
@@ -50,13 +51,11 @@ export default function Blogs() {
         "sm:col-span-2 sm:row-span-1 rounded-2xl sm:flex flex-col cursor-pointer min-w-full sm:min-h-[270px] min-h-[180px] days-blog",
       isHiddenRev: true,
     },
-   
-    
-    
   ];
 
   const [showReviews, setShowReviews] = useState(false);
   const [buttonText, setButtonText] = useState("SEE MORE");
+  const [denseFormat, setDenseFormat] = useState(false);
 
   const toggleReviews = () => {
     setShowReviews(!showReviews);
@@ -67,34 +66,69 @@ export default function Blogs() {
     window.open(url, "_blank");
   };
 
-  //   TODO: ADD FILTER OPTION for what website its on and topics? Like some tags on the top you can select
+  const handleFormatChange = (e) => {
+    setDenseFormat(e.target.checked);
+  };
 
   return (
     <main className="max-w-7xl mx-auto px-5 mt-12 blog-main text-white">
-      <h1 className="md:text-4xl text-3xl font-bold max-w-5xl">
-        Articles & Blog posts
-      </h1>
-      <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container mt-8">
-        {blogs.map((blog, index) => (
-          <div
-            key={index}
-            className={`${blog.uniqueClassNames} ${
-              blog.isHiddenRev && !showReviews ? "hidden" : "sm:flex flex"
-            }`}
-            onClick={() => handleDivClick(blog.blogLink)}
-            role="button"
-            aria-label={`Read blog: ${blog.name}`}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleDivClick(blog.blogLink);
-            }}
-          >
-            <p className="m-4  desc-box h-full flex text-[20px] items-end">
-              <span>{blog.description}</span>
-            </p>
-            {/* add white under it */}
-          </div>
-        ))}
+      <div className="flex justify-between">
+        <h1 className="md:text-4xl text-3xl font-bold max-w-5xl">
+          Articles & Blog posts
+        </h1>
+        <div className="pr-1">
+          <label className="label cursor-pointer">
+            <span className="label-text text-white pr-4 text-lg">
+              Dense Format
+            </span>
+            <input
+              type="checkbox"
+              className="checkbox border-orange-400 checked:border-indigo-800 [--chkbg:theme(colors.indigo.600)] [--chkfg:orange]"
+              onChange={handleFormatChange}
+            />
+          </label>
+        </div>
       </div>
+
+      {!denseFormat ? (
+        <div className="sm:grid sm:grid-cols-3 gap-4 flex flex-wrap blog-container mt-8">
+          {blogs.map((blog, index) => (
+            <div
+              key={index}
+              className={`${blog.uniqueClassNames} ${
+                blog.isHiddenRev && !showReviews ? "hidden" : "sm:flex flex"
+              } shadow-md`}
+              onClick={() => handleDivClick(blog.blogLink)}
+              role="button"
+              aria-label={`Read blog: ${blog.name}`}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleDivClick(blog.blogLink);
+              }}
+            >
+              <p className="m-4 desc-box h-full flex text-[20px] items-end">
+                <span>{blog.name}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="dense-format mt-8">
+          {blogs.map((blog, index) => (
+            <div key={index} className="dense-blog-item mb-4">
+              <h1 className="text-xl font-bold underline">
+                <a
+                  href={blog.blogLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {blog.name}
+                </a>
+              </h1>
+              <p>{blog.description}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="w-full justify-center flex sm:hidden">
         <button
