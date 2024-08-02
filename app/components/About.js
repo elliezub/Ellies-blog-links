@@ -1,11 +1,11 @@
-export default function ThingsILove() {
+export default function About() {
   const skills = [
-    "React",
-    "JavaScript",
-    "Next.js",
     "C#",
-    "Meow",
-    "Meow",
+    ".NET Framework",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Vite",
     "Meow",
     "Meow",
   ];
@@ -22,8 +22,9 @@ export default function ThingsILove() {
             <li>Developer Advocate @ Pieces</li>
             <li>Technical Writer @ Code Maze</li>
             <li>Volunteer Web Content Editor @ MuggleNet</li>
+            {/* add links for proof */}
           </ul>
-          <h1>Something</h1>
+          {/* <h1>Something</h1>
           <ul className="list-disc ml-6 mb-6">
             <li>
               I plan to change this text later! Not sure what I will write here.
@@ -34,7 +35,7 @@ export default function ThingsILove() {
               here.
             </li>
             <li>hi</li>
-          </ul>
+          </ul> */}
           <h1>Skills</h1>
           <ul className="flex gap-x-5 gap-y-1 flex-wrap">
             {skills.map((skill, index) => (

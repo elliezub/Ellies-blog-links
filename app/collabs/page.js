@@ -53,9 +53,11 @@ export default function Collabs() {
       linkToCollab: "https://www.youtube.com/watch?v=hvyn-n8Kqgg&t=86s",
       description: (
         <>
-          I had the opportunity to discuss the benefits of building in public
-          with a group of insightful people. This roundtable chat occurred
-          during Journeys Conference, a fundraising event hosted by the{" "}
+          I had the opportunity create the promo graphics for this online
+          conference. Then, during the actual conference, I got to discuss the
+          benefits of building in public with a group of insightful people. This
+          roundtable chat occurred during Journeys Conference, a fundraising
+          event hosted by the{" "}
           <Link
             href="https://thetc.co/"
             target="_blank"
