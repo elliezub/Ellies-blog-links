@@ -5,10 +5,18 @@ export default function Collabs() {
   const collabItems = [
     {
       name: "Live Coffee Chat",
-      types: ["Twitter Space", "Live Stream"],
+      types: ["Twitter Space", "Live Stream", "Ongoing"],
       linkToCollab: "https://spacesdashboard.com/u/elliezub",
       description:
-        "Once a week I host a group coffee chat space where people can connect with others in the tech community. We don't necessarily have a specific topic, but the goal is to make new friends, have fun, & *hopefully* learn new things.",
+        "Once a week I host a group coffee chat space where people can connect with others in the tech community. I host the space version on Twitter/X, and the live-stream version on Twitch and YouTube.",
+      sideImg: "/livecoffeechat.png",
+    },
+    {
+      name: "THAT Conference WI 2024",
+      types: ["Live Stream", "Conference"],
+      linkToCollab: "that conf youtube link",
+      description:
+        'During THAT conference I got to participate in a panel discussion hosted by Shashi Lo about THAT Conference, a short interview with James Quick, and got to participate in Andrew\'s "Code Confessions" podcast.',
       sideImg: "/livecoffeechat.png",
     },
     {
@@ -25,7 +33,7 @@ export default function Collabs() {
             Sophia
           </Link>{" "}
           invited me on the DevMar Dot&apos;s podcast to talk about &quot;The
-          Do&apos;s & Don&apos;ts of Technical Writing&quot;. 
+          Do&apos;s & Don&apos;ts of Technical Writing&quot;.
         </>
       ),
       sideImg: "/beacamppurple.jpg",
