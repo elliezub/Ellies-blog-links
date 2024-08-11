@@ -17,7 +17,7 @@ export default function Collabs() {
       linkToCollab: "that conf youtube link",
       description:
         'During THAT conference I got to participate in a panel discussion hosted by Shashi Lo about THAT Conference, a short interview with James Quick, and got to participate in Andrew\'s "Code Confessions" podcast.',
-      sideImg: "/livecoffeechat.png",
+      sideImg: "/thatconfsquare.png",
     },
     {
       name: "DevMar Dots w/ Sophia Iroegbu",
@@ -113,7 +113,7 @@ export default function Collabs() {
               </div>
 
               {item.description && (
-                <p className="mt-3 lg:text-2xl text-xl text-pretty">
+                <p className="mt-3 lg:text-[1.4rem] text-xl text-pretty">
                   {item.description}
                 </p>
               )}
